@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+const _ = require('underscore');
+
+const compile = _.compose(
+  require('../codegen'),
+  require('../parser'),
+  require('../lexer')
+);
+
+let input = '';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+
+process.stdin.on('data', function (data) {
+  input += data;
+});
+
+process.stdin.on('end', function () {
+  process.stdout.write(`${compile(input)}\n`);
+});

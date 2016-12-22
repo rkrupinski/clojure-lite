@@ -1,0 +1,30 @@
+{
+  "name": "clojure-lite",
+  "version": "0.0.0",
+  "description": "Compiles an extremely small subset of clojure to JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint *.js",
+    "prepublish": "npm run lint"
+  },
+  "bin": {
+    "cl": "./bin/cl"
+  },
+  "engines": {
+    "node": ">=6.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkrupinski/clojure-lite.git"
+  },
+  "author": "Rafał Krupiński",
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "homepage": "https://github.com/rkrupinski/clojure-lite#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
