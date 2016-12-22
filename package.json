@@ -1,6 +1,6 @@
 {
   "name": "clojure-lite",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Compiles an extremely small subset of clojure to JavaScript",
   "main": "index.js",
   "scripts": {
